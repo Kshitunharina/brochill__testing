@@ -2,27 +2,102 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brochill</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>contact</title>
+    <link rel="stylesheet" href="navstyle.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <style>
+      form {
+        position: relative;
+        top: 30vh;
+        z-index: -1;
+        width: 50vw;
+        margin: auto;
+      }
+
+      form h2 {
+        color: rgb(111, 228, 110);
+        font-size: 30px;
+      }
+
+      form label {
+        font-size: 18px;
+      }
+
+      form input {
+        width: 100%;
+        padding: 13px 10px;
+        border: 1px solid gainsboro;
+        border-radius: 3px;
+        background-color: rgb(250, 250, 250);
+      }
+
+      form textarea {
+        border: 1px solid gainsboro;
+        background-color: rgb(250, 250, 250);
+      }
+
+      form textarea {
+        width: 100%;
+        border-radius: 3px;
+      }
+
+      form input:last-child {
+        width: 120px;
+        background-color: rgb(1, 112, 185);
+        color: white;
+        font-size: 16px;
+      }
+
+      input {
+        margin-bottom: 10px;
+        margin-top: 5px;
+      }
+
+      textarea {
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+
+      .contactinfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 55vh;
+        width: 90vw;
+        margin: auto;
+        height: 60vh;
+        z-index: -1;
+      }
+
+      .contactinfo .info {
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: -20px;
+      }
+
+      .info h1 {
+        font-size: 50px;
+      }
+
+      .info a {
+        font-size: 18px;
+        color: black;
+        line-height: 35px;
+      }
+    </style>
   </head>
   <body>
-    <div class="main">
-      <div
-        class="head"
-        style="
-          border-bottom: 1px solid white;
-          background-color: green;
-          padding: 10px;
-          padding-left: 40px;
-          font-size: 18px;
-        "
-      >
+    <div class="header">
+      <div class="head">
         <a href="#"
           ><i class="fa-brands fa-square-facebook" style="color: #ffffff"></i
         ></a>
@@ -39,8 +114,8 @@
           ><i class="fa-brands fa-linkedin" style="color: #ffffff"></i
         ></a>
       </div>
-      <div class="header">
-        <div class="mainhead">
+      <div class="nav">
+        <div class="navcontent">
           <div class="header1">
             <img
               src="https://www.brochill.com/wp-content/uploads/2021/09/cropped-brochill-logo.png"
@@ -59,7 +134,7 @@
                   class="fa-solid fa-angle-down"
                   style="
                     position: absolute;
-                    top: 80px;
+                    top: 72px;
                     font-size: 10px;
                     padding-left: 8px;
                   "
@@ -72,9 +147,7 @@
               </ul>
             </li>
             <li><a href="contact.html"> contact</a></li>
-            <li>
-              <a href="guideline.html"> content & community guidelines</a>
-            </li>
+            <li><a href="guideline.html"> content & community guidelines</a></li>
             <li><a href="condition.html"> terms of service</a></li>
             <li><a href="privacy.html"> privacy policy</a></li>
             <li><a href="contact.html"> contact</a></li>
@@ -82,81 +155,36 @@
         </div>
       </div>
     </div>
+    <form action="">
+      <h2>For any Queries</h2>
+      <br />
+      <label for="yourname">Your name</label> <br />
+      <input id="yourname" type="text" /> <br />
+      <br />
+      <label for="email">Your email</label><br />
+      <input type="email" id="email" /> <br /><br />
+      <label for="contact">Your contact number</label> <br />
+      <input type="tel" id="contact" /> <br /><br />
+      <label for="subject" id="subject">Subject</label><br />
+      <input id="subject" type="text" /><br /><br />
+      <label for="upload">Upload file</label> <br />
+      <input id="upload" type="file" /> <br /><br />
+      <label for="messege">Your message (optional)</label> <br />
+      <textarea name="" id="" cols="60" rows="20"></textarea> <br /><br />
+      <input type="submit" value="submit" />
+    </form>
 
-    <div class="section1" id="firstsection">
-      <div class="small1">
-        <h1>BroChill</h1>
-        <p>Local is the New Global</p>
-        <p>India’s biggest localized content creation platform</p>
+    <div class="contactinfo">
+      <div class="info">
+        <h1>Contact info</h1>
+        <a href="#"
+          >Third floor, Ravi chambers, Kavuri Hills, Madhapur, Telangana <br />
+          500083</a
+        >
+        <p>Email: <a href="#">contact@brochill.com </a></p>
       </div>
-
-      <div class="small2">
-        <img
-          src="https://www.brochill.com/wp-content/uploads/2021/09/google-playstore-icon-1.png"
-          alt=""
-        />
-        <h1>32,056,732</h1>
-        <p>32M+ Strong Downloads</p>
-      </div>
-    </div>
-
-    <div class="section2">
-      <h1 id="kuku" style="height: 7vh; padding: 0 5px;;">What is bro chill?</h1>
-      
-
-      <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <script>
-        var typed = new Typed("#kuku", {
-          strings: ["What is bro chill?"],
-          typeSpeed: 50,
-          backspeed:0,
-          loop: true,
-        });
-      </script> -->
-
-      <div class="container" >
-        <p>
-          Brochill is a vernacular content platform. It is a personalizable
-          content discovery platform. Creators post personalisable images and
-          videos, and users consume them. All content is curated based on
-          trends, events and festivals.
-        </p>
-        <img
-          src="https://www.brochill.com/wp-content/uploads/2021/09/what-is-brochill2-1.png"
-          alt="#"
-        />
-      </div>
-    </div>
-    <div class="section2">
-      <h1 id="kuku">What to do?</h1>
-      <div class="container">
-        <p>
-          BroChill provides a platform for innovative content creators. Where
-          creators can post personalizable videos, personalizable images, and
-          short videos on BroChill. All content posted by creators is curated
-          based on user interests, social ratings, trends, events, special days,
-          and festivals.
-        </p>
-        <img
-          src="https://www.brochill.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-30-at-10.20.04.jpeg"
-          alt="#"
-        />
-      </div>
-    </div>
-    <div class="section2">
-      <div class="container">
-        <p>
-          BroChill provides a platform for vernacular consumers. They can
-          consume the content by creating their own video and images from
-          personalizable content which is posted by content creators. BroChill
-          curates all content and provides different types of collections based
-          on categories. Where consumers can easily find and create their own
-          videos and images within one minute.
-        </p>
-        <img
-          src="https://www.brochill.com/wp-content/uploads/2021/09/what-we-do22.png"
-          alt="#"
-        />
+      <div class="map">
+        <img src="Screenshot (31).png" alt="" width="550px" height="400px" />
       </div>
     </div>
 
@@ -164,7 +192,7 @@
       <div class="container1">
         <ul style="text-align: center" class="firstlist">
           <li>BroChill</li>
-          <li>
+          <li style="line-height: 25px">
             <a href="#" style="width: 200px; display: block">
               Third Floor, Ravi Chambers, Kavuri Hills, Madhapur, Telangana
               500083.</a
@@ -221,13 +249,18 @@
 
         <ul>
           <li>Menu</li>
-          <li><a href="#"> Home</a></li>
-          <li><a href="#"> Explore</a></li>
-          <li><a href="#"> Contact</a></li>
-          <li><a href="#"> Content & Community Guidelines</a></li>
-          <li><a href="#"> Terms of Service</a></li>
-          <li><a href="#"> Privacy Policy</a></li>
-          <li><a href="#"> Contact</a></li>
+          <li class="menucontent"><a href="#"> Home</a></li>
+          <li class="menucontent"><a href="#"> Explore</a></li>
+          <li class="menucontent"><a href="#"> Contact</a></li>
+          <li class="menucontent">
+            <a href="#">
+              Content & Community <br />
+              Guidelines</a
+            >
+          </li>
+          <li class="menucontent"><a href="#"> Terms of Service</a></li>
+          <li class="menucontent"><a href="#"> Privacy Policy</a></li>
+          <li class="menucontent"><a href="#"> Contact</a></li>
         </ul>
       </div>
 

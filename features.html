@@ -4,25 +4,199 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brochill</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+
+        overflow-x: hidden;
+      }
+      .header {
+        position: fixed;
+      }
+      .head {
+        background-color: green;
+        display: flex;
+        height: 5vh;
+      }
+
+      .head a {
+        display: block;
+        padding: 10px;
+        padding-right: 3px;
+      }
+      .nav {
+        width: 100vw;
+        background-color: rgb(23, 149, 23);
+        height: 15vh;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav a:hover {
+        color: rgb(162, 255, 70);
+      }
+      .navcontent {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .navcontent > ul {
+        display: flex;
+        justify-content: space-around;
+        /* border: 2px solid red; */
+        align-items: center;
+      }
+
+      .navcontent ul {
+        list-style: none;
+      }
+
+      .navcontent ul li {
+        padding: 0 20px;
+      }
+
+      .navcontent ul li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .navcontent {
+        width: 90vw;
+        margin: auto;
+      }
+
+      .navcontent ul li ul {
+        background-color: aliceblue;
+        position: absolute;
+      }
+      ul li ul li {
+        display: none;
+      }
+      .navcontent ul li ul li a:hover {
+        color: rgb(153, 244, 16);
+      }
+      ul li:hover ul li {
+        display: block;
+        width: 200px;
+        height: 50px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        width: 100vw;
+        position: relative;
+        top: 30vh;
+        z-index: -1;
+      }
+      .content1 {
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+
+      .content .yt {
+        width: 600px;
+      }
+
+      .content .lastimg {
+        width: 80%;
+      }
+      .para h3,
+      p {
+        color: rgb(17, 160, 17);
+      }
+      p:last-child {
+        line-height: 30px;
+      }
+
+      h3 {
+        font-size: 35px;
+      }
+
+      .footer {
+        background-color: black;
+        height: 60vh;
+        position: relative;
+        margin-top: 45vh;
+      }
+
+      .container1 {
+        display: flex;
+        justify-content: space-around;
+        /* border: 2px solid red; */
+        height: 60vh;
+        color: #ffffff;
+      }
+
+      .container1 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container1 li {
+        padding: 12px;
+      }
+      .menucontent {
+        font-weight:800 ;
+      }
+      .container1 li:first-child {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .container1 ul a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .storing {
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+      }
+
+      .lastfoot {
+        display: flex;
+        justify-content: space-between;
+
+        width: 80vw;
+        margin: auto;
+      }
+
+      .lastfoot ul {
+        display: flex;
+        list-style: none;
+      }
+
+      .lastfoot ul li {
+        padding: 5px;
+      }
+
+     
+    </style>
   </head>
   <body>
-    <div class="main">
-      <div
-        class="head"
-        style="
-          border-bottom: 1px solid white;
-          background-color: green;
-          padding: 10px;
-          padding-left: 40px;
-          font-size: 18px;
-        "
-      >
+    <div class="header">
+      <div class="head">
         <a href="#"
           ><i class="fa-brands fa-square-facebook" style="color: #ffffff"></i
         ></a>
@@ -39,8 +213,8 @@
           ><i class="fa-brands fa-linkedin" style="color: #ffffff"></i
         ></a>
       </div>
-      <div class="header">
-        <div class="mainhead">
+      <div class="nav">
+        <div class="navcontent">
           <div class="header1">
             <img
               src="https://www.brochill.com/wp-content/uploads/2021/09/cropped-brochill-logo.png"
@@ -59,7 +233,7 @@
                   class="fa-solid fa-angle-down"
                   style="
                     position: absolute;
-                    top: 80px;
+                    top: 72px;
                     font-size: 10px;
                     padding-left: 8px;
                   "
@@ -72,9 +246,7 @@
               </ul>
             </li>
             <li><a href="contact.html"> contact</a></li>
-            <li>
-              <a href="guideline.html"> content & community guidelines</a>
-            </li>
+            <li><a href="guideline.html"> content & community guidelines</a></li>
             <li><a href="condition.html"> terms of service</a></li>
             <li><a href="privacy.html"> privacy policy</a></li>
             <li><a href="contact.html"> contact</a></li>
@@ -82,89 +254,48 @@
         </div>
       </div>
     </div>
-
-    <div class="section1" id="firstsection">
-      <div class="small1">
-        <h1>BroChill</h1>
-        <p>Local is the New Global</p>
+    <div class="content" style="width: 100vw">
+      <img src="features.png" alt="" class="yt" />
+      <div
+        class="para"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+          width: 80vw;
+          margin: auto;
+        "
+      >
+        <h3>BroChill</h3>
+        <p>Local is the new global</p>
         <p>India’s biggest localized content creation platform</p>
-      </div>
-
-      <div class="small2">
-        <img
-          src="https://www.brochill.com/wp-content/uploads/2021/09/google-playstore-icon-1.png"
-          alt=""
-        />
-        <h1>32,056,732</h1>
-        <p>32M+ Strong Downloads</p>
-      </div>
-    </div>
-
-    <div class="section2">
-      <h1 id="kuku" style="height: 7vh; padding: 0 5px;;">What is bro chill?</h1>
-      
-
-      <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <script>
-        var typed = new Typed("#kuku", {
-          strings: ["What is bro chill?"],
-          typeSpeed: 50,
-          backspeed:0,
-          loop: true,
-        });
-      </script> -->
-
-      <div class="container" >
-        <p>
-          Brochill is a vernacular content platform. It is a personalizable
-          content discovery platform. Creators post personalisable images and
-          videos, and users consume them. All content is curated based on
-          trends, events and festivals.
+        <p style="color: gray">
+          Brochill has features that are used to create and share personalized
+          trending videos, lyrical songs, wishes, dialogues, trolls, effects and
+          many more videos and images among friends and social media in a single
+          click.
         </p>
-        <img
-          src="https://www.brochill.com/wp-content/uploads/2021/09/what-is-brochill2-1.png"
-          alt="#"
-        />
       </div>
-    </div>
-    <div class="section2">
-      <h1 id="kuku">What to do?</h1>
-      <div class="container">
-        <p>
-          BroChill provides a platform for innovative content creators. Where
-          creators can post personalizable videos, personalizable images, and
-          short videos on BroChill. All content posted by creators is curated
-          based on user interests, social ratings, trends, events, special days,
-          and festivals.
-        </p>
-        <img
-          src="https://www.brochill.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-30-at-10.20.04.jpeg"
-          alt="#"
-        />
-      </div>
-    </div>
-    <div class="section2">
-      <div class="container">
-        <p>
-          BroChill provides a platform for vernacular consumers. They can
-          consume the content by creating their own video and images from
-          personalizable content which is posted by content creators. BroChill
-          curates all content and provides different types of collections based
-          on categories. Where consumers can easily find and create their own
-          videos and images within one minute.
-        </p>
-        <img
-          src="https://www.brochill.com/wp-content/uploads/2021/09/what-we-do22.png"
-          alt="#"
-        />
-      </div>
+      <img
+        class="scan"
+        src="https://www.brochill.com/wp-content/uploads/2021/09/BroChill-QR-Code-Scanner-1-300x300.png"
+        alt=""
+        width="300px"
+        height="300px"
+      />
+      <img
+        src="https://www.brochill.com/wp-content/uploads/2021/09/Web-Image-1-1536x571.png"
+        class="lastimg"
+        alt=""
+      />
     </div>
 
     <div class="footer">
       <div class="container1">
         <ul style="text-align: center" class="firstlist">
           <li>BroChill</li>
-          <li>
+          <li style="line-height: 25px;">
             <a href="#" style="width: 200px; display: block">
               Third Floor, Ravi Chambers, Kavuri Hills, Madhapur, Telangana
               500083.</a
@@ -221,13 +352,15 @@
 
         <ul>
           <li>Menu</li>
-          <li><a href="#"> Home</a></li>
-          <li><a href="#"> Explore</a></li>
-          <li><a href="#"> Contact</a></li>
-          <li><a href="#"> Content & Community Guidelines</a></li>
-          <li><a href="#"> Terms of Service</a></li>
-          <li><a href="#"> Privacy Policy</a></li>
-          <li><a href="#"> Contact</a></li>
+          <li class="menucontent"><a href="#"> Home</a></li>
+          <li class="menucontent"><a href="#"> Explore</a></li>
+          <li class="menucontent"><a href="#"> Contact</a></li>
+          <li class="menucontent">
+            <a href="#"> Content & Community <br> Guidelines</a>
+          </li>
+          <li class="menucontent"><a href="#"> Terms of Service</a></li>
+          <li class="menucontent"><a href="#"> Privacy Policy</a></li>
+          <li class="menucontent"><a href="#"> Contact</a></li>
         </ul>
       </div>
 
